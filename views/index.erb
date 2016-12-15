@@ -1,0 +1,11 @@
+<a href="/create-form">
+  <button name="button">Create New Pokemon</button>
+</a>
+
+<% @pokemons.each do |pokemon| %>
+  <a href="/<%=pokemon[:id]%>"
+    <p>
+      <%= pokemon[:name] %>
+    </p>
+  </a>
+<% end %>
